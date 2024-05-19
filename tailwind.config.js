@@ -10,7 +10,7 @@ module.exports = {
         'green': '#0A6847',
       },
       fontFamily: {
-        'sans': ['Inter', 'sans-serif'],
+        'lato': ['Lato', 'sans-serif'],
       },
     },
   },
