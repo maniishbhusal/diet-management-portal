@@ -11,3 +11,6 @@ Images from Pixabay
 Subscription Section:
 Content generated from ChatGPT
 
+Contact Us Section:
+Template from https://tailwindflex.com/@anja/contact-us-form-2
+
