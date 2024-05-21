@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Diet Management Portal - Login Page</title>
+  <link href="./src/output.css" rel="stylesheet" />
+</head>
+
+<body>
+
+      <!-- navbar -->
+  <header class="flex justify-between items-center p-5 xl:mx-48">
+    <a href="index.html" class="font-bold text-2xl">Dieto</a>
+    <div id="nav-menu" class="hidden md:flex gap-10">
+      <a href="index.html#home" class="lg:text-xl font-medium hover:text-greeen">Home</a>
+      <a href="index.html#about-us" class="lg:text-xl font-medium hover:text-greeen">About</a>
+      <a href="index.html#health-plan" class="lg:text-xl font-medium hover:text-greeen">Health Plans</a>
+      <a href="index.html#contact-us" class="lg:text-xl font-medium hover:text-greeen">Contact Us</a>
+    </div>
+
+    <button id="appointment"
+      class="hidden font-bold border border-primary p-3 hover:border-greeen hover:text-greeen rounded-lg md:block">
+      Book Appointment
+    </button>
+    <button class="md:hidden hover:text-greeen" onclick="handleMenu()">
+      <i class="fa-solid fa-bars text-2xl"></i>
+    </button>
+
+    <div id="nav-dialog" class="hidden fixed bg-white inset-0 p-5 md:hidden">
+      <div id="navbar" class="flex justify-between">
+        <a href="index.html" class="font-bold text-2xl">Dieto</a>
+        <button class="md:hidden hover:text-greeen" onclick="handleMenu()">
+          <i class="fa-solid fa-close text-2xl"></i>
+        </button>
+      </div>
+      <div class="mt-6">
+        <a href="index.html#home" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl" onclick="handleMenu()">Home</a>
+        <a href="index.html#about-us" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl" onclick="handleMenu()">About</a>
+        <a href="index.html#health-plan" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl" onclick="handleMenu()">Health Plans</a>
+        <a href="index.html#contact-us" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl" onclick="handleMenu()">Contact Us</a>
+      </div>
+      <div class="h-[1px] bg-gray-300"></div>
+      <button class="font-bold border border-primary mt-6 p-3 hover:border-greeen hover:text-greeen rounded-lg">
+        Book Appointment
+      </button>
+    </div>
+  </header>
+
+
+
+</body>
+
+<script src="./script.js"></script>
+</html>
