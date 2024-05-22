@@ -10,7 +10,6 @@
     }
     
     body {
-        @apply max-w-full
         @apply font-lato;
         @apply bg-gradient-to-r from-teal-50 to-cyan-100;
     }

@@ -13,7 +13,7 @@
 
 <body>
 
-      <!-- navbar -->
+  <!-- navbar -->
   <header class="flex justify-between items-center p-5 xl:mx-48">
     <a href="index.html" class="font-bold text-2xl">Dieto</a>
     <div id="nav-menu" class="hidden md:flex gap-10">
@@ -39,10 +39,14 @@
         </button>
       </div>
       <div class="mt-6">
-        <a href="index.html#home" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl" onclick="handleMenu()">Home</a>
-        <a href="index.html#about-us" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl" onclick="handleMenu()">About</a>
-        <a href="index.html#health-plan" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl" onclick="handleMenu()">Health Plans</a>
-        <a href="index.html#contact-us" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl" onclick="handleMenu()">Contact Us</a>
+        <a href="index.html#home" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl"
+          onclick="handleMenu()">Home</a>
+        <a href="index.html#about-us" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl"
+          onclick="handleMenu()">About</a>
+        <a href="index.html#health-plan" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl"
+          onclick="handleMenu()">Health Plans</a>
+        <a href="index.html#contact-us" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl"
+          onclick="handleMenu()">Contact Us</a>
       </div>
       <div class="h-[1px] bg-gray-300"></div>
       <button class="font-bold border border-primary mt-6 p-3 hover:border-greeen hover:text-greeen rounded-lg">
@@ -52,38 +56,47 @@
   </header>
 
   <!-- Login page  -->
-    <section class="dark:bg-gray-900">
-        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-            <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-                <img class="w-8 h-8 mr-2" src="https://www.pngall.com/wp-content/uploads/5/Diet-PNG-File.png" alt="logo">
-                Dieto    
-            </a>
-            <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-                    <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                        Sign in to your account
-                    </h1>
-                    <form class="space-y-4 md:space-y-6" action="index.html">
-                        <div>
-                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-greeen dark:focus:border-greeen" placeholder="name@gmail.com" required="">
-                        </div>
-                        <div>
-                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                            <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-greeen dark:focus:border-greeen" required="">
-                        </div>
-                       
-                        <button id="login-btn" class="w-full text-white bg-greeen hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
-                        <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                            Don’t have an account yet? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
-                        </p>
-                    </form>
-                </div>
+  <section class="dark:bg-gray-900">
+    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+      <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+        <img class="w-8 h-8 mr-2" src="https://www.pngall.com/wp-content/uploads/5/Diet-PNG-File.png" alt="logo">
+        Dieto
+      </a>
+      <div
+        class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+        <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+          <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+            Sign in to your account
+          </h1>
+          <form class="space-y-4 md:space-y-6" action="index.html">
+            <div>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+              <input type="email" name="email" id="email"
+                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-greeen dark:focus:border-greeen"
+                placeholder="name@gmail.com" required="">
             </div>
-        </div>
-      </section>
+            <div>
+              <label for="password"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+              <input type="password" name="password" id="password" placeholder="••••••••"
+                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-greeen dark:focus:border-greeen"
+                required="">
+            </div>
 
+            <button id="login-btn"
+              class="w-full text-white bg-greeen hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign
+              in</button>
+            <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+              Don’t have an account yet? <a href="#"
+                class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./script.js"></script>
 </body>
 
-<script src="./script.js"></script>
 </html>

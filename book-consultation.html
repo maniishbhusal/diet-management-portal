@@ -13,7 +13,7 @@
 
 <body>
 
-      <!-- navbar -->
+  <!-- navbar -->
   <header class="flex justify-between items-center p-5 xl:mx-48">
     <a href="index.html" class="font-bold text-2xl">Dieto</a>
     <div id="nav-menu" class="hidden md:flex gap-10">
@@ -39,10 +39,14 @@
         </button>
       </div>
       <div class="mt-6">
-        <a href="index.html#home" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl" onclick="handleMenu()">Home</a>
-        <a href="index.html#about-us" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl" onclick="handleMenu()">About</a>
-        <a href="index.html#health-plan" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl" onclick="handleMenu()">Health Plans</a>
-        <a href="index.html#contact-us" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl" onclick="handleMenu()">Contact Us</a>
+        <a href="index.html#home" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl"
+          onclick="handleMenu()">Home</a>
+        <a href="index.html#about-us" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl"
+          onclick="handleMenu()">About</a>
+        <a href="index.html#health-plan" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl"
+          onclick="handleMenu()">Health Plans</a>
+        <a href="index.html#contact-us" class="font-medium m-2 p-2 hover:bg-gray-50 hover:text-greeen block rounded-xl"
+          onclick="handleMenu()">Contact Us</a>
       </div>
       <div class="h-[1px] bg-gray-300"></div>
       <button class="font-bold border border-primary mt-6 p-3 hover:border-greeen hover:text-greeen rounded-lg">
@@ -52,8 +56,84 @@
   </header>
 
 
+  <!-- consultation form section  -->
+  <section id="book-consultation" class="container mx-auto min-h-screen">
+    <div class="lg:my-20 flex lg:justify-around lg:flex-row flex-col gap-10 p-5">
+      <div class="max-w-xl">
+        <h1 class="font-bold mb-4 leading-snug"><span class="text-greeen">100,000+</span> have lost weight & achieved
+          their fitness goals with Dieto</h1>
+        <p class="mb-6">You too can get fit with the easiest weight loss journey planned by certified experts.</p>
+        <button id="book-consultation-btn"
+          class="bg-greeen text-white py-2 px-4 rounded-xl hover:bg-green-700 transition duration-300">Book A
+          Consultation</button>
+      </div>
+      <img class="w-full lg:w-1/3 rounded-lg"
+        src="https://fitelo.co/wp-content/uploads/v4banner-5-1-e1715774588627-1.webp" alt="Success Image">
+    </div>
 
+    <div id="consultation-form" class="max-w-3xl mx-auto mt-10 p-5 border rounded-lg shadow-lg">
+      <h2 class="text-2xl font-bold mb-6 text-center">Let's Get Started</h2>
+      <form action="index.html" onsubmit="consultationSubmitted()">
+        <!-- First Row: Name and Country -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8 mb-4">
+          <div class="flex flex-col">
+            <label for="name" class="mb-2 font-medium">Name*</label>
+            <input type="text" name="name" id="name" class="border p-3 rounded" required>
+          </div>
+          <div class="flex flex-col">
+            <label for="country" class="mb-2 font-medium">Country*</label>
+            <select name="country" id="country" class="border p-3 rounded bg-white" required>
+              <option value="" disabled selected>Select your country</option>
+              <option value="Nepal">Nepal</option>
+              <option value="Australia">Australia</option>
+              <option value="Canada">Canada</option>
+              <option value="India">India</option>
+              <option value="UK">United Kingdom</option>
+              <option value="USA">United States</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Second Row: Contact No and Gender -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8 mb-4">
+          <div class="flex flex-col">
+            <label for="contact" class="mb-2 font-medium">Contact No*</label>
+            <input type="tel" name="contact" id="contact" class="border p-3 rounded" required>
+          </div>
+          <div class="flex flex-col">
+            <label for="gender" class="mb-2 font-medium">Gender*</label>
+            <select name="gender" id="gender" class="border p-3 rounded bg-white" required>
+              <option value="" disabled selected>Select your gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Third Row: Age and Preferred Date and Time -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8 mb-4">
+          <div class="flex flex-col">
+            <label for="age" class="mb-2 font-medium">Age*</label>
+            <input type="number" name="age" id="age" class="border p-3 rounded" required>
+          </div>
+          <div class="flex flex-col">
+            <label for="datetime" class="mb-2 font-medium">Preferred Date and Time*</label>
+            <input type="datetime-local" name="datetime" id="datetime" class="border p-3 rounded" required>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-6">
+          <button type="submit" class="bg-greeen text-white py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300">Book a Consultation Now</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+
+
+  <script src="./script.js"></script>
 </body>
 
-<script src="./script.js"></script>
 </html>
